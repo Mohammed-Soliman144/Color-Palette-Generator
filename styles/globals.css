@@ -1,0 +1,135 @@
+@layer reset, tokens;
+
+@import "./reset.css" layer(reset);
+@import "./tokens.css" layer(tokens);
+
+/* body */
+body {
+  font-family: "Roboto", sans-serif;
+  background-image: var(--color-body-gradient);
+}
+
+/* Container */
+.container {
+  margin-inline: auto;
+  padding-inline: var(--padding-sm);
+  width: 100%;
+}
+
+@media (min-width: 96rem) {
+  .container {
+    padding-inline: var(--padding-lg);
+    max-width: calc(96rem - 2 * var(--padding-lg));
+  }
+}
+
+@media (min-width: 80rem) {
+  .container {
+    padding-inline: var(--padding-lg);
+    max-width: calc(80rem - 2 * var(--padding-lg));
+  }
+}
+
+@media (min-width: 64rem) {
+  .container {
+    padding-inline: var(--padding-md);
+    max-width: calc(64rem - 2 * var(--padding-md));
+  }
+}
+
+@media (min-width: 48rem) {
+  .container {
+    padding-inline: var(--padding-sm);
+    max-width: calc(48rem - 2 * var(--padding-sm));
+  }
+}
+
+@media (min-width: 40rem) {
+  .container {
+    padding-inline: var(--padding-sm);
+    max-width: calc(40rem - 2 * var(--padding-sm));
+  }
+}
+
+/* Main */
+.main {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Main Section Colors */
+.main__sec-colors {
+  background: #fff;
+  padding: var(--padding-md);
+  border-radius: var(--radius-3xl);
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: var(--space-xl);
+}
+
+.sec-colors__heading {
+  align-self: center;
+  font-size: var(--font-2xl);
+  font-weight: var(--font-bolder);
+  text-transform: capitalize;
+  letter-spacing: -0.75px;
+  position: relative;
+}
+
+.sec-colors__heading::after {
+  content: "";
+  width: 75%;
+  height: 3px;
+  background-color: var(--color-light-purple);
+  border-radius: var(--radius-sm);
+  position: absolute;
+  bottom: 2px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.sec-colors__button--primary {
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--space-md);
+  text-transform: capitalize;
+  background-image: var(--color-btn-gradient);
+  padding: var(--padding-sm);
+  border-radius: var(--radius-pill);
+  color: var(--color-foreground-white);
+  transition:
+    transform 0.4s ease,
+    box-shadow 0.4s ease;
+  outline: none;
+}
+
+.sec-colors__button--primary:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-btn);
+}
+
+.sec-colors__button--primary:active {
+  transform: translateY(0);
+}
+
+.button__text {
+  order: 2;
+}
+
+/* Palette Container */
+.palette-container {
+  margin-top: var(--space-3xl);
+  width: 100%;
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: var(--space-sm);
+}
