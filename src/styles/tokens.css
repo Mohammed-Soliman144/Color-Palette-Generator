@@ -9,6 +9,12 @@
   --color-heavy-violet: #3c096c;
   --color-foreground-white: #fefffe;
   --color-foreground-dark: #0d1b2a;
+  --color-salmon: #fa8072;
+  --color-hot-pink: #ff69b4;
+  --color-dark-orange: #ff8c00;
+  --color-lime: #00ff00;
+  --color-chocolate: #d2691e;
+
   /* linear-gradient */
   --color-btn-gradient: linear-gradient(
     to right,
@@ -42,7 +48,7 @@
   --font-black: 900;
 
   /* Spacing */
-  --space-xs: 0.25rem;
+  --space-xs: 0.3rem;
   --space-sm: 0.5rem;
   --space-md: 0.75rem;
   --space-lg: 1rem;
@@ -52,6 +58,7 @@
   --space-4xl: 3rem;
 
   /* Padding */
+  --padding-xs: 0.25rem;
   --padding-sm: 1rem;
   --padding-md: 1.25rem;
   --padding-lg: 2.5rem;
@@ -68,8 +75,8 @@
   --radius-3xl: 1.25rem;
 
   /* BOX Shadow */
+  --shadow-xs: 0 3px 10px rgb(0 0 0 0.1);
   --shadow-sm: 0 4px 8px rgb(0 0 0 0.3);
   --shadow-btn: 0 4px 12px var(--color-light-violet);
   --shadow-md: 0 8px 24px rgb(0 0 0 0.1);
-  --shadow-lg: 0 16px 36px rgb(0 0 0 0.3);
 }

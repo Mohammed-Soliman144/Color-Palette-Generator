@@ -21,6 +21,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./styles/globals.css" />
+    <script type="module" src="./js/main.js"></script>
   </head>
   <body>
     <main class="main">
@@ -28,6 +29,7 @@
         <section class="main__sec-colors">
           <h1 class="sec-colors__heading">color palette generator</h1>
           <button
+            id="generate-random-btn"
             class="sec-colors__button--primary button"
             type="button"
             aria-label="Generate random palette colors"
@@ -55,10 +57,10 @@
             </svg>
           </button>
           <div class="palette-container">
-            <div class="palette__one">
+            <div class="palette__box palette">
               <div class="palette__header"></div>
               <button type="button" class="palette__button--secondary button">
-                <span class="button__text">#44485</span>
+                <span class="button__text">#fa8072</span>
                 <svg
                   class="button__copy-icon icon"
                   aria-hidden="true"
@@ -85,10 +87,10 @@
                 </svg>
               </button>
             </div>
-            <div class="palette__one">
+            <div class="palette__box palette">
               <div class="palette__header"></div>
               <button type="button" class="palette__button--secondary button">
-                <span class="button__text"></span>
+                <span class="button__text">#ff69b4</span>
                 <svg
                   class="button__copy-icon icon"
                   aria-hidden="true"
@@ -115,10 +117,10 @@
                 </svg>
               </button>
             </div>
-            <div class="palette__one">
+            <div class="palette__box palette">
               <div class="palette__header"></div>
               <button type="button" class="palette__button--secondary button">
-                <span class="button__text"></span>
+                <span class="button__text">#ff8c00</span>
                 <svg
                   class="button__copy-icon icon"
                   aria-hidden="true"
@@ -145,10 +147,10 @@
                 </svg>
               </button>
             </div>
-            <div class="palette__one">
+            <div class="palette__box palette">
               <div class="palette__header"></div>
               <button type="button" class="palette__button--secondary button">
-                <span class="button__text"></span>
+                <span class="button__text">#00ff00</span>
                 <svg
                   class="button__copy-icon icon"
                   aria-hidden="true"
@@ -175,10 +177,10 @@
                 </svg>
               </button>
             </div>
-            <div class="palette__one">
+            <div class="palette__box palette">
               <div class="palette__header"></div>
               <button type="button" class="palette__button--secondary button">
-                <span class="button__text"></span>
+                <span class="button__text">#d2691e</span>
                 <svg
                   class="button__copy-icon icon"
                   aria-hidden="true"
